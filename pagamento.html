@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Conheça a Move+ Academy! Uma academia completa com infraestrutura moderna, treinos personalizados e professores prontos para acelerar os seus resultados. Na Move+ Academy você encontra o equilíbrio perfeito entre saúde e alta performance. Treinos inteligentes, modalidades variadas e uma comunidade ativa. Comece hoje!">
+    <title>Página de pagamento</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img\+.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#244cfd">
+
+</head>
+
+<body class="pagamento">
+
+
+    <a href="planos.html" class="voltar">
+        ← Voltar para os planos
+    </a>
+    <br>
+
+    <div class="pagamento_topo">
+        <h1>Forma de pagamento</h1>
+        <p class="p_topo">Finalize sua assinatura e comece hoje mesmo a transformar sua vida.</p>
+    </div>
+
+    <div class="left_pagamento">
+
+        <!-- LADO ESQUERDO -->
+        <div class="pagamento_opcoes">
+
+            <h2>1. Escolha a forma de pagamento</h2>
+
+            <div class="metodos_pagamento">
+
+                <div class="metodo_ativo ativo" onclick="mostrarPagamento('cartao', this)">
+                    <img src="img/Cartao.png">
+
+                    <div class="metodo_informacoes">
+                        <span>Cartão de crédito</span>
+                        <p>Pagamento seguro</p>
+                    </div>
+                </div>
+
+                <div class="metodo_ativo" onclick="mostrarPagamento('pix', this)">
+                    <img src="img/Pix.png">
+
+                    <div class="metodo_informacoes">
+                        <span>Pix</span>
+                        <p>Aprovação imediata</p>
+                    </div>
+                </div>
+
+                <div class="metodo_ativo" onclick="mostrarPagamento('boleto', this)">
+                    <img src="img/Boleto.png">
+
+                    <div class="metodo_informacoes">
+                        <span>Boleto bancário</span>
+                        <p>Compensação em até 3 dias</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- FORMULÁRIO CARTÃO -->
+            <div id="cartao" class="forma_pagamento">
+
+                <h2>2. Dados do cartão</h2>
+
+                <label>Nome no cartão</label>
+                <input type="text" placeholder="Como está escrito no cartão">
+
+                <div class="input_linhas">
+
+                    <div>
+                        <label>Número do cartão</label>
+                        <input type="text" placeholder="0000 0000 0000 0000">
+                    </div>
+
+                    <div>
+                        <label>Validade</label>
+                        <input type="month">
+                    </div>
+
+                    <div>
+                        <label>CVV</label>
+                        <input type="password" placeholder="123">
+                    </div>
+
+                </div>
+
+                <label>CPF</label>
+                <input type="text" placeholder="000.000.000-00">
+
+            </div>
+
+
+            <!-- FORMULÁRIO PIX -->
+            <div id="pix" class="forma_pagamento" style="display:none;">
+
+                <h2>2. Pagamento via Pix</h2>
+
+                <p style="color:white;">
+                    Escaneie o QR Code abaixo para realizar o pagamento.
+                </p>
+
+                <img src="img/qr.png" alt="QR Code Pix" style="width:220px; margin:20px auto; display:block;">
+
+                <p style="color:white;">
+                    Após o pagamento a confirmação acontece automaticamente.
+                </p>
+
+            </div>
+
+
+            <!-- FORMULÁRIO BOLETO -->
+            <div id="boleto" class="forma_pagamento" style="display:none;">
+
+                <h2>2. Pagamento por boleto</h2>
+
+                <p style="color:white;">
+                    Clique no botão abaixo para gerar seu boleto bancário.
+                </p>
+
+                <button class="finalizar" type="button" onclick="gerarBoleto()">
+                    Gerar boleto bancário
+                </button>
+
+                <p style="color:white; margin-top:20px;">
+                    O pagamento pode levar até 3 dias úteis para ser compensado.
+                </p>
+
+            </div>
+
+            <div class="resumo_pedido">
+
+                <h2>Resumo do pedido</h2>
+                <div class="plano_final">
+                    <img id="imgPlano" class="imgPlanoResumo">
+
+                    <div>
+                        <p id="nomePlano"></p>
+                    </div>
+                </div>
+
+                <div class="valores">
+                    <p id="valorPlano"></p>
+                </div>
+
+                <div class="valores">
+                    <strong id="totalPlano"></strong>
+                </div>
+
+                <div class="taxa">
+                    <img src="img/Adesao.png" width=20% height=20%> Sem taxa de adesão
+                </div>
+
+                <button class="finalizar" onclick="finalizarPagamento()">
+                    Finalizar pagamento
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/pagamento.js"></script>
+</body>
+
+</html>

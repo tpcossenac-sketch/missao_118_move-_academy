@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Conheça a Move+ Academy! Uma academia completa com infraestrutura moderna, treinos personalizados e professores prontos para acelerar os seus resultados. Na Move+ Academy você encontra o equilíbrio perfeito entre saúde e alta performance. Treinos inteligentes, modalidades variadas e uma comunidade ativa. Comece hoje!">
+    <title>Planos</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img\+.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#244cfd">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/logo2.png">
+            </div>
+
+            <h4><a href="index.html" class="cabeçalho">Início</a></h4>
+
+            <h4 id="menuPlanos">
+                <a href="planos.html" class="cabeçalho">Planos</a>
+            </h4>
+
+            <h4 id="menuAulas">
+                <a href="aulas.html" class="cabeçalho">Aulas</a>
+            </h4>
+
+            <h4 id="menuUnidades">
+                <a href="unidades.html" class="cabeçalho">Unidades</a>
+            </h4>
+
+            <h4 id="menuTreinos" style="display:none;">
+                <a href="treinos.html" class="cabeçalho">Treinos</a>
+            </h4>
+
+            <div class="Entrar">
+                <a href="login.html">Entrar</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="painelPlanos">
+        <h1><br>
+            Escolha o plano ideal para alcançar.<br>
+            <strong style="color: rgb(36, 76, 253)">seus objetivos!</strong>
+        </h1>
+        <h4>Treinos modernos, acompanhamento profissional e o melhor ambiente para você evoluir todos os dias.</h4>
+    </div>
+
+    <div class="cards_planos">
+
+        <div class="recursos_planos">
+            <img src="img/PlanoBasico.png">
+            <h2>Plano Básico+</h2>
+            <h1>R$ 49,90</h1>
+            <p>Equipamentos</p>
+            <p>Plano de treino</p>
+            <a href="cadastro.html" class="botao_recursos" onclick="localStorage.setItem('planoEscolhido','basico')">
+                Escolher Plano
+            </a>
+        </div>
+
+        <div class="recursos_planos-destaque">
+            <img src="img/PlanoPremium+.png">
+            <h2>Plano Premium+</h2>
+            <h1>R$ 129,90</h1>
+            <p>Equipamentos</p>
+            <p>Plano de treino</p>
+            <p>Avaliação física</p>
+            <p>Aulas coletivas</p>
+            <a href="cadastro.html" class="botao_recursos" onclick="localStorage.setItem('planoEscolhido','premium')">
+                Escolher Plano
+            </a>
+        </div>
+
+        <div class="recursos_planos">
+            <img src="img/PlanoVIP+.png">
+            <h2>Plano VIP+</h2>
+            <h1>R$ 199,90</h1>
+            <p>Equipamentos</p>
+            <p>Plano de treino</p>
+            <p>Avaliação física</p>
+            <p>Aulas coletivas</p>
+            <p>Nutricionista</p>
+            <a href="cadastro.html" class="botao_recursos" onclick="localStorage.setItem('planoEscolhido','vip')">
+                Escolher Plano
+            </a>
+        </div>
+
+    </div>
+
+    <div class="tabela-planos">
+        <table>
+            <thead>
+                <tr>
+                    <th>RECURSOS</th>
+                    <th>BÁSICO</th>
+                    <th>PREMIUM</th>
+                    <th>VIP</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Equipamentos</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                </tr>
+                <tr>
+                    <td>Avaliação física</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                </tr>
+                <tr>
+                    <td>Plano de treino</td>
+                    <td>—</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                </tr>
+                <tr>
+                    <td>Aulas coletivas</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>✔</td>
+                </tr>
+                <tr>
+                    <td>Nutricionista</td>
+                    <td>—</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="rodape">
+        <div class="rodapeImagem">
+            <img src="img/logo2.png">
+        </div>
+        <div class="coluna">
+            <h4>Redes sociais</h4>
+            <p class="icone"><img src="img/instagram.png"> @move_academy</p>
+            <p class="icone"><img src="img/facebook.png"> @move_academy</p>
+            <p class="icone"><img src="img/youtube.png"> Move+ Academy</p>
+        </div>
+
+        <div class="coluna">
+            <h4>Contato</h4>
+            <p class="icone"><img src="img/telefone.png"> (11) 99999-9999</p>
+            <p class="icone"><img src="img/e-mail.png"> contato@moveacademy.com.br</p>
+            <p class="icone"><img src="img/endereço.png"> Rua das Flores, 123 — São Paulo, SP</p>
+        </div>
+
+        <div class="coluna">
+            <h4>Newsletter</h4>
+            <p class="icone"><img src="img/notificacao.png"> Receba notificações e promoções em novidades!</p>
+            <input type="email" placeholder="Coloque seu e-mail aqui">
+        </div>
+    </div>
+    <script src="js/pagamento.js"></script>
+</body>
+
+</html>
