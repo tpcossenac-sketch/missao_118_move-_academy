@@ -6,7 +6,7 @@
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#00295C",
+  "background_color": "#00295c",
   "theme_color": "#244cfd",
   "lang": "pt-BR",
   "icons": [
@@ -27,5 +27,13 @@
       "type": "image/png",
       "purpose": "maskable"
     }
+  ],
+  "dir": "auto",
+  "categories": [
+    "education",
+    "fitness",
+    "health",
+    "health &amp; fitness",
+    "sports"
   ]
 }
