@@ -1,7 +1,7 @@
 {
   "name": "Move+ Academy",
   "short_name": "Move+",
-  "description": "Move+ Academy - Academia completa para treinos, aulas, planos e acompanhamento.",
+  "description": "Aplicativo da Move+ Academy para acompanhar planos, treinos e serviços da academia.",
   "start_url": "index.html",
   "scope": "./",
   "display": "standalone",
